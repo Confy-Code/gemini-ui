@@ -52,7 +52,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   border-radius: 20%;
-  border-style: ;
+  border-left-width: 20px;
   background-color: #1e1f20;
 
   padding-top: 2.5%;
