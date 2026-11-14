@@ -1,5 +1,17 @@
 body {
-  background-color: black;
+  margin: 0;
+  min-height: 100vh;
+  /* Deep dark charcoal base */
+  background-color: #0e1015; 
+  /* Soft, wide navy-blue glow centered slightly above the middle */
+  background-image: radial-gradient(
+    ellipse at 50% 50%, 
+    rgba(32, 46, 92, 0.50) 5%, 
+    rgba(16, 21, 42, 0.60) 15%,
+    rgba(24, 38, 86, 0.50) 30%, 
+    rgba(14, 16, 21, 0.25) 50%,
+    rgba(8, 15, 29, 0.8) 75%
+  );
 }
 
 
@@ -16,13 +28,36 @@ body {
   padding-top: 10px;
 }
 
-.nav-list-item {
+.nav-list-item-1 {
   display: flex;
+  gap: 16px;
   list-style-type: none;
   align-items: flex-end;
   border-radius: 8px;
-  border-width: 100%;
+  border-width: 30px;
+  border: 12px solid #171717;
+  border-radius: 20px;
+  background-color: #171717;
   /* background-color: blue; */
+}
+
+.nav-list-item-2 {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+  align-items: center;
+  border-radius: 8px;
+  border-width: 30px;
+  border: 12px solid #1f3b9b;
+  border-radius: 20px;
+  background-color: #1f3b9b;
+}
+
+.nav-list-item-img {
+  display: flex;
+  width: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -42,20 +77,61 @@ h1 {
 
 .prompt-handler {
   display: flex;
+  width: fit-content;
+  margin: 0 auto;
   font-family: "Google Sans Flex", "Google Sans", "Helvetica Neue", sans-serif;
-  font-size: 23px;
-  font-weight: 320;
+  font-size: 20px;
   line-height: 44px;
   color: #e3e3e3;
-
+  gap: 30rem;
+  padding: 12px 42px;
   list-style-type: none;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 20%;
-  border-left-width: 20px;
+  justify-content: center;
+  border-radius: 32px;
   background-color: #1e1f20;
+}
 
-  padding-top: 2.5%;
-  padding-left: 25%;
-  padding-right: 25%;
+.prompt-handler > .left-side {
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+}
+
+.prompt-handler > .right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  gap: 10px
+}
+
+.right-side > .prompt-text {
+  display: flex;
+  align-items: center;
+}
+
+.right-side > .down-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggestions {
+  display: grid;
+  padding-top: 70px;
+  gap: 30px;
+  font-family: "Google Sans Flex", "Google Sans", "Helvetica Neue", sans-serif;
+  color:#e3e3e3 ;
+  font-size: larger;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 25%;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 15px;
 }
